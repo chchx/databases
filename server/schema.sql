@@ -1,21 +1,22 @@
--- CREATE DATABASE chat;
+CREATE DATABASE chat;
 
 USE chat;
 
 CREATE TABLE users (
-  ID int NOT NULL,
+  ID int NOT NULL AUTO_INCREMENT,
   username varchar(100),
   PRIMARY KEY (ID)
 );
 
 CREATE TABLE rooms (
-  ID int NOT NULL,
+  ID int NOT NULL AUTO_INCREMENT,
   roomname varchar(100),
   PRIMARY KEY (ID)
 );
 
 CREATE TABLE messages (
-  ID int NOT NULL,
+
+  ID int NOT NULL AUTO_INCREMENT,
   text varchar(10000),
   userID int,
   roomID int,
